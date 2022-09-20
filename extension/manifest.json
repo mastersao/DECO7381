@@ -1,0 +1,14 @@
+{
+    "name": "Misinformations Detective",
+    "description": "Find all the Misinformations",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": ["<all_urls>"],
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
