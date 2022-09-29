@@ -90,4 +90,7 @@ input:checked + .slider:before {
     background-color: rgb(225, 225, 225);
 }
 
-
+.highlight {
+    background: yellow;
+    color: red;
+}

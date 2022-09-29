@@ -6,9 +6,29 @@
     "background": {
         "service_worker": "background.js"
     },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ],
     "host_permissions": ["<all_urls>"],
-    "permissions": ["storage", "activeTab", "scripting"],
+    "permissions": ["storage", "activeTab", "scripting", "declarativeContent"],
     "action": {
-        "default_popup": "popup.html"
-    }
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/pics/logo-16px.png",
+            "32": "/pics/logo-32px.png",
+            "48": "/pics/logo-48px.png",
+            "128": "/pics/logo-128px.png"
+          }
+    },
+    "icons": {
+        "16": "/pics/logo-16px.png",
+        "32": "/pics/logo-32px.png",
+        "48": "/pics/logo-48px.png",
+        "128": "/pics/logo-128px.png"
+      }
 }
